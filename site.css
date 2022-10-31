@@ -1,0 +1,47 @@
+html {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 100%;
+  min-height: 100vh;
+  display: grid;
+
+
+
+}
+
+body {
+
+  background: linear-gradient(360deg, rgba(255, 89, 125, .95), rgba(255, 89, 125, 0)),
+    linear-gradient(90deg, rgba(255, 128, 191, 1), rgba(255, 156, 142, 1));
+  display: grid;
+
+}
+
+svg {
+
+  fill: #140D1B;
+  display: block;
+  animation: pulsate 8s cubic-bezier(.61,0,.7,.99) infinite alternate;
+}
+@keyframes pulsate {
+  from {
+    transform: scale(1);
+  }
+  
+  to {
+    transform: scale(0.8);
+  }
+
+
+
+}
+
+main {
+  display: grid;
+  grid-template-columns: clamp(15em, 50vw, 45em);
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 16vh
+
+}
